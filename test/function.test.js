@@ -2,9 +2,12 @@ import { YearsOld } from '../src/functions';
 
 describe('Users Age in Earth Years', function() {
 
-  it('gets birthday from user and returns age in years', function() {
-    // let birthday = new Date('1990-01-01');
-    // let today = new Date('2019-05-31');
-    expect(YearsOld.earthYears()).toEqual(28);
+  it('can evaluate dates as equal', function() {
+    expect(('1990-01-01')).toEqual("1990-01-01");
+  });
+  it('calculates how old in years', function() {
+    let birthday = new Date(93,7,30);
+    YearsOld(new Date(birthday));
+    expect(earthYears(birthday)).toEqual(25)
   });
 });
