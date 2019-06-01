@@ -19,6 +19,12 @@ _This program calculates other planetary year values based off of the user's age
 | With each previous selection, the average remaining life expectancy in that planets years are returned, based off of the US national average (78.7) | "01/01/1990" | 49 years left (Earth) |
 | If the user inputs an age greater than the average life expectancy, then the years they have lived past the average life expectancy are returned | "01/01/1890" | 50 years longer than avg. (Earth) |
 
+## Setup Instruction 
+
+* Clone project from Github
+* run "$ npm install" in terminal
+* run "$ npm run start" in termianl
+
 ## Known Bugs
 
 * _No known bugs at this moment_
