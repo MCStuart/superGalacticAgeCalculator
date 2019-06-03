@@ -40,4 +40,9 @@ export class YearsOld {
     let avgEarthDaysLeft = Math.floor(avgAgeExpectancyInDays - this.daysOld());
     return avgEarthDaysLeft;
   }
+
+  earthYearsLeft() {
+    let terrestrialYearsLeft = Math.floor(this.daysLeft() / 365);
+    return terrestrialYearsLeft;
+  }
 };

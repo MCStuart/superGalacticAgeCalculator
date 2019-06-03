@@ -56,3 +56,11 @@ describe('Remaining days left to live on Earth', function () {
     expect(testAge.daysLeft()).toEqual(expectedDaysLeft);
   });
 });
+describe('Remaining years left to live on Earth', function () {
+
+  it('Calculates remaining years left to live on Earth on average', function () {
+    let testAge = new YearsOld("1990-01-01");
+    let expectedEarthYearsLeft = 49;
+    expect(testAge.earthYearsLeft()).toEqual(expectedEarthYearsLeft);
+  });
+});
