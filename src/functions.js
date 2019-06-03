@@ -15,6 +15,16 @@ export class YearsOld {
     return terrestrialAge;
   }
   
+  earthYearsLeft() {
+    let terrestrialYearsLeft = Math.floor(this.daysLeft() / 365);
+    return terrestrialYearsLeft;
+  }
+
+  earthYearsExceeded() {
+    let terrestrialYearsLeft = Math.floor(this.daysLeft() / 365);
+    return terrestrialYearsLeft;
+  }
+
   mercuryYears() {
     let mercurialAge = Math.floor(this.daysOld() / 87.97);
     return mercurialAge;
@@ -37,12 +47,7 @@ export class YearsOld {
 
   daysLeft() {
     const avgAgeExpectancyInDays = (78.69 * 365); // Avg. life expectancy in the United States for male and female combined
-    let avgEarthDaysLeft = Math.floor(avgAgeExpectancyInDays - this.daysOld());
+    let avgEarthDaysLeft = Math.abs(Math.floor(avgAgeExpectancyInDays - this.daysOld()));
     return avgEarthDaysLeft;
   }
-
-  earthYearsLeft() {
-    let terrestrialYearsLeft = Math.floor(this.daysLeft() / 365);
-    return terrestrialYearsLeft;
-  }
-};
+}

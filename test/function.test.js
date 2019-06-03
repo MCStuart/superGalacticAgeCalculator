@@ -64,3 +64,11 @@ describe('Remaining years left to live on Earth', function () {
     expect(testAge.earthYearsLeft()).toEqual(expectedEarthYearsLeft);
   });
 });
+describe('Years exceeded Earth Life Expectancy', function () {
+
+  it('Calculates years exceeded average Earth life expectancy', function () {
+    let testAge = new YearsOld("1890-01-01");
+    let expectedEarthYearsLeft = 50;
+    expect(testAge.earthYearsLeft()).toEqual(expectedEarthYearsLeft);
+  });
+});
