@@ -1,11 +1,13 @@
 export class YearsOld {
-    constructor(dateBorn) {
-        this.dateBorn = dateBorn;
-        let birthday = new Date(this.dateBorn);
-        let today = new Date('2019-05-31');
-    }
+  constructor(birthday) {
+    this.birthday = new Date(birthday);
+  }
     
-    earthYears(birthday) {
-        let earthAge = Math.floor((today - birthday) / 31536000000);
-    }
+  earthYears() {
+    let today = Date.now();
+    // let birthdayInMiliSeconds = this.birthday.getTime();
+    let ageRaw = (today - this.birthday);
+    let age = Math.floor(ageRaw / 31536000000);
+    return age;
+  }
 };
