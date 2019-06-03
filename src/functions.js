@@ -20,9 +20,10 @@ export class YearsOld {
     return mercurialAge;
   }
 
-  // venusYears() {
-
-  // }
+  venusYears() {
+    let venusianAge = Math.floor(this.daysOld() / 224.70);
+    return venusianAge;
+  }
 
   // marsYears() {
 
