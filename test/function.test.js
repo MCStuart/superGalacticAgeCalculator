@@ -48,11 +48,11 @@ describe('Users Age in Jupiter Years', function () {
     expect(testAge.jupiterYears()).toEqual(expectedAge);
   });
 });
-describe('Remaining years left to live on Earth', function () {
+describe('Remaining days left to live on Earth', function () {
 
-  it('Calculates remaining years left to live on average', function () {
+  it('Calculates remaining days left to live on Earth on average', function () {
     let testAge = new YearsOld("1990-01-01");
-    let expectedYearsLeft = 49;
-    expect(testAge.yearsLeft()).toEqual(expectedYearsLeft);
+    let expectedDaysLeft = 49;
+    expect(testAge.daysLeft()).toEqual(expectedDaysLeft);
   });
 });

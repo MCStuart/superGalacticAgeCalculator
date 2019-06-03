@@ -35,8 +35,8 @@ export class YearsOld {
     return jovianAge;
   }
 
-  // yearsLeft() {
-  //   const avgAgeExpectancy = (78.69 * 365); // Avg. life expectancy in the United States for male and female combined
-
-  // }
+  daysLeft() {
+    const avgAgeExpectancyInDays = (78.69 * 365); // Avg. life expectancy in the United States for male and female combined
+    let avgEarthDaysLeft = (avgAgeExpectancyInDays - this.daysOld());
+  }
 };
