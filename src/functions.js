@@ -2,12 +2,32 @@ export class YearsOld {
   constructor(birthday) {
     this.birthday = new Date(birthday);
   }
-    
-  earthYears() {
+  
+  daysOld() {
     let today = Date.now();
-    // let birthdayInMiliSeconds = this.birthday.getTime();
     let ageRaw = (today - this.birthday);
-    let age = Math.floor(ageRaw / 31536000000);
-    return age;
+    let ageInDays = Math.floor(ageRaw / 8.64e+7);
+    return ageInDays;
   }
+
+  earthYears() {
+    let terrestrialAge = Math.floor(this.daysOld() / 365);
+    return terrestrialAge;
+  }
+  
+  // mercuryYears() {
+  //   let mercuryAge = this.age /
+  // }
+
+  // venusYears() {
+
+  // }
+
+  // marsYears() {
+
+  // }
+
+  // jupiterYears() {
+
+  // }
 };
