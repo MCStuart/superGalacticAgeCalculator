@@ -15,9 +15,10 @@ export class YearsOld {
     return terrestrialAge;
   }
   
-  // mercuryYears() {
-  //   let mercuryAge = this.age /
-  // }
+  mercuryYears() {
+    let mercurialAge = Math.floor(this.daysOld() / 87.97);
+    return mercurialAge;
+  }
 
   // venusYears() {
 
