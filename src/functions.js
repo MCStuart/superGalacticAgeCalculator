@@ -30,7 +30,8 @@ export class YearsOld {
     return martianAge;
   }
 
-  // jupiterYears() {
-
-  // }
+  jupiterYears() {
+    let jovianAge = Math.floor(this.daysOld() / (11.862615 * 365));
+    return jovianAge;
+  }
 };
