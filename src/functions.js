@@ -34,4 +34,9 @@ export class YearsOld {
     let jovianAge = Math.floor(this.daysOld() / (11.862615 * 365));
     return jovianAge;
   }
+
+  // yearsLeft() {
+  //   const avgAgeExpectancy = (78.69 * 365); // Avg. life expectancy in the United States for male and female combined
+
+  // }
 };
