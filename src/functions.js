@@ -37,6 +37,7 @@ export class YearsOld {
 
   daysLeft() {
     const avgAgeExpectancyInDays = (78.69 * 365); // Avg. life expectancy in the United States for male and female combined
-    let avgEarthDaysLeft = (avgAgeExpectancyInDays - this.daysOld());
+    let avgEarthDaysLeft = Math.floor(avgAgeExpectancyInDays - this.daysOld());
+    return avgEarthDaysLeft;
   }
 };
